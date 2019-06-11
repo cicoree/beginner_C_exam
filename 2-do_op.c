@@ -21,6 +21,8 @@ int     main(int argc, char **argv)
             printf("%d", a * b);
         else if (op == '/')
             printf("%d", a / b);
+        else if (op == '%')
+            printf("%d", a % b);
     }
     printf("\n");
     return (0);
