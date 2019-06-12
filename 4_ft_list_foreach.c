@@ -1,4 +1,4 @@
-#include "ft_list.h" //make sure to include this prototype along with the typedef and the ifndef / define / endif in your .h
+#include "ft_list.h" //make sure to include the prototype along with the typedef and the ifndef / define / endif in your .h
 
 void	ft_list_foreach(t_list *begin_list, void (*f)(void *))
 {
