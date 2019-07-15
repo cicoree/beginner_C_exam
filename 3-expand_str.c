@@ -17,7 +17,7 @@ int	main(int argc, char **argv)
                 	if (!ISBLANK(argv[1][i + 1]) && argv[1][i + 1] != '\0')
                     		write(1, "   ", 3);
             	}        
-            	else if (!ISBLANK(argv[1][i]))
+            	else
 			write(1, &argv[1][i], 1);
 		i++;
 	}
