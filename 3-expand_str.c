@@ -1,5 +1,5 @@
 #include <unistd.h>
-# define ISBLANK(c) (c == '\t' || c == ' ')
+# define ISBLANK(c) (c == '\t' || c == ' ') //macros are a friend of mine
 
 int	main(int argc, char **argv)
 {
