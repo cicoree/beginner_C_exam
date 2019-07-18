@@ -4,3 +4,7 @@ Be very careful. Some problem specifications have CHANGED even though the name o
 Exam problem database: http://kaoteq.com/sites/42/exam-review.php (some of these are out of date, see note above!)  
 Focusing on levels 2, 3, 4 as this is where I need to make progress for now.  
 To test the code use https://www.jdoodle.com/c-online-compiler
+  
+  ### Random notes
+To test output with an argument containing tabs, you type ./a.out followed by your argument in quotation marks, and wherever you want to insert a tab, type CONTROL + V and then TAB. you will see an actual tab being inserted. Don't use copy paste as this is not the same.   
+> echo $? to display last returned value.  
