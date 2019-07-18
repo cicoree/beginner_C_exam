@@ -12,16 +12,16 @@
 
 char	*ft_strrev(char *str)
 {
-	int		i;
-	int		len;
+	int	i;
+	int	len;
 	char	temp;
 
 	len = 0;
 	while (str[len] != '\0')
-		len++;
-	len--;
+		len++; // computing length of string, but watch out, now str[len] would be '\0'
+	len--; // so that str[len] = last char, not the null char
 	i = 0;
-	while (i < len)
+	while (i < len) // you want to stop swapping once i has reached middle of string
 	{
 		temp = str[i];
 		str[i] = str[len];
