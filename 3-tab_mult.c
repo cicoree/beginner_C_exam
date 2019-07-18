@@ -9,7 +9,7 @@ int     ft_atoi(char *str) // watch out this is a modified atoi that won't accou
     res = 0;
     while(str[i])
     {
-        if (str[i] > 47 && str[i] < 58)
+        if (str[i] >= '0' && str[i] <= '9')
             res = res * 10 + str[i] - '0';
         i++;
     }
