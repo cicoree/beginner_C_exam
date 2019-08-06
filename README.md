@@ -8,3 +8,4 @@ To test the code use https://www.jdoodle.com/c-online-compiler
   ### Random notes
 To test output with an argument containing tabs, you type ./a.out followed by your argument in quotation marks, and wherever you want to insert a tab, type CONTROL + V and then TAB. you will see an actual tab being inserted. Don't use copy paste as this is not the same.   
 > echo $? to display last returned value.  
+The vim you use during exam will be black and white. In visual mode, type ":syntax on" to make the relevant words colorful. It will help you see your code better.
