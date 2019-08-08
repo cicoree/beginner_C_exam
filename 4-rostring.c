@@ -1,5 +1,3 @@
-//PLEASE NOTE THIS CODE IS FLAWED. I AM WORKING ON IT!!! DO NOT SUBMIT THIS
-
 #include <unistd.h>
 
 # define ISBLANK(c) (c == ' ' || c == '\t' || c == '\n')
@@ -14,6 +12,7 @@ void	rostring(char *str)
 	int i;
 	int start;
 	int end;
+	int flag;
 
 	i = 0;
 	while (str[i] && ISBLANK(str[i]))
@@ -30,8 +29,13 @@ void	rostring(char *str)
 		{
 			ft_putchar(str[i]); 
 			i++; 
+			flag = 1;
 		}
-		ft_putchar(' '); // follow it with a single space
+		if (flag == 1)
+		{
+			ft_putchar(' '); // print a space but only if you just printed a word
+			flag = 0;
+		} 
 	}
 	while (start < end) // now finish by writing the first word at the end
 	{
