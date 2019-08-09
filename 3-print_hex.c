@@ -12,7 +12,7 @@
 
 #include <unistd.h>
 
-int	ft_atoi(char *str)
+int	ft_atoi(char	*str)
 {
 	int	i;
 	int	res;
@@ -35,7 +35,7 @@ int	ft_atoi(char *str)
 void	print_hex(int	n)
 {
 	if (n >= 16)
-		print_hex(n / 16);
+		print_hex(n / 16); // recursively run this until number is smaller than 16
 	n = n % 16; // get the remainder of a division by 16
 	if (n < 10)
 		n = n + '0'; // if the remainder is btw 0 and 9, just write it
