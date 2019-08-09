@@ -21,7 +21,7 @@ int	ft_atoi(char	*str)
 	res = 0; // note we don't care about sign because the input will be zero or positive
 
 	while (str[i] && (str[i] == 32 || (str[i] >= 9 && str[i] <= 13)))
-			i++;
+		i++;
 	if (str[i] == '+') // extra precaution in case there's a useless plus sign in front of the digits
 		i++;
 	while (str[i] >= '0' && str[i] <= '9')
