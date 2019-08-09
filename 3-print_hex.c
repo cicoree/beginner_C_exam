@@ -12,10 +12,10 @@
 
 #include <unistd.h>
 
-int		ft_atoi(char *str)
+int	ft_atoi(char *str)
 {
-	int		i;
-	int		res;
+	int	i;
+	int	res;
 
 	i = 0;
 	res = 0; // note we don't care about sign because the input will be zero or positive
@@ -44,7 +44,7 @@ void	print_hex(int	n)
 	write(1, &n, 1);
 }
 
-int		main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	if (argc == 2)
 		print_hex(ft_atoi(argv[1]));
