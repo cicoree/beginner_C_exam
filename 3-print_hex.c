@@ -40,7 +40,7 @@ void	print_hex(int	n)
 	if (n < 10)
 		n = n + '0'; // if the remainder is btw 0 and 9, just write it
 	else
-		n = 'a'+ (n - 10); // if the remainder is btw 10 and 15, it should be transcribed as a,b,c,d,e,f
+		n = 'a'+ (n - 10); // if the remainder is btw 10 and 15, we write it as a + (distance btw this number and 10)
 	write(1, &n, 1);
 }
 
