@@ -14,8 +14,8 @@
 
 int		main(int argc, char **argv)
 {
-	int		i;
-	int		j;
+	int	i;
+	int	j;
 
 	if (argc == 3)
 	{
