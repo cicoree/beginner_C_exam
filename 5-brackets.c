@@ -16,7 +16,7 @@
 #define CLOSE(c) (c == ')' || c == '}' || c == ']')
 #define MATCH(a, b) ((a == '(' && b == ')') || (a == '[' && b == ']') || (a == '{' && b == '}'))
 
-int		ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
 	int	i;
 
@@ -53,7 +53,7 @@ int	brackets(char *str)
 	return (top == 0);
 }
 
-int		main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	int		i;
 
