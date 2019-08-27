@@ -18,7 +18,7 @@
 
 int		ft_strlen(char *str)
 {
-	int		i;
+	int	i;
 
 	i = 0;
 	while (str[i])
@@ -26,10 +26,10 @@ int		ft_strlen(char *str)
 	return (i);
 }
 
-int		brackets(char *str)
+int	brackets(char *str)
 {
-	int		i;
-	int		top;
+	int	i;
+	int	top;
 	char	stack[ft_strlen(str)];
 
 	i = 0;
